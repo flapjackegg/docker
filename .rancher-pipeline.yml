@@ -2,8 +2,8 @@ stages:
 - name: compile-scratch
   steps:
   - publishImageConfig:
-      dockerfilePath: ./nginx/Dockerfile
+      dockerfilePath: ./scratch/Dockerfile
       buildContext: .
-      tag: php-nginx
+      tag: phpcode
       registry: registry-vpc.cn-beijing.aliyuncs.com
 timeout: 60
