@@ -1,2 +1,3 @@
-FROM scratch
-ADD index.php /wwwroot
+FROM alpine
+RUN mkdir /wwwroot
+ADD ./scratch/index.php /wwwroot
