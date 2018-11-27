@@ -1,0 +1,9 @@
+stages:
+- name: compile
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./php/php5/Dockerfile
+      buildContext: .
+      tag: php5
+      registry: registry-vpc.cn-beijing.aliyuncs.com
+timeout: 60
