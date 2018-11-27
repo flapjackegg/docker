@@ -1,2 +1,3 @@
 FROM scratch
-ADD index.php /wwwroot
+RUN mkdir /wwwroot
+ADD ./scratch/index.php /wwwroot
