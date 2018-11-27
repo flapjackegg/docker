@@ -1,18 +1,4 @@
 stages:
-- name: compile
-  steps:
-  - publishImageConfig:
-      dockerfilePath: ./php/php5/Dockerfile
-      buildContext: .
-      tag: php5
-      registry: registry-vpc.cn-beijing.aliyuncs.com
-- name: compile-nginx
-  steps:
-  - publishImageConfig:
-      dockerfilePath: ./nginx/Dockerfile
-      buildContext: .
-      tag: nginx
-      registry: registry-vpc.cn-beijing.aliyuncs.com
 - name: compile-scratch
   steps:
   - publishImageConfig:
