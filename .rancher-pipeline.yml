@@ -6,4 +6,11 @@ stages:
       buildContext: .
       tag: phpcode
       registry: registry-vpc.cn-beijing.aliyuncs.com
+- name: compile-nginx
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./nginx/Dockerfile
+      buildContext: .
+      tag: nginx-php
+      registry: registry-vpc.cn-beijing.aliyuncs.com
 timeout: 60
